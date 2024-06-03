@@ -47,7 +47,7 @@ class MyBot(BaseBot):
  
   async def on_chat(self, user: User, message: str):
 
-    if message.startswith("!come") and user.username in ["T9s", "_Rolex_x"]:
+    if message.startswith("!come") and user.username in ["T9s", "_Rolex_x","xXLoveLoopXx"]:
       response = await self.highrise.get_room_users()
       your_pos = None
       for content in response.content:
