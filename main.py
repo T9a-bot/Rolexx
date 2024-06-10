@@ -32,7 +32,6 @@ class MyBot(BaseBot):
     self.user_positions = {}
 
   async def on_user_leave(self, user: User) -> None:
-    print(f"{user.username}")
     await self.highrise.chat(f" Yeah gtfo {user.username}")
 
 
